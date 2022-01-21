@@ -59,7 +59,7 @@ class PriceGameTypeFactory
         } else if (type === "aaaprice") {
             priceType = new AAAPrice();
         }
-        priceType.display()
+        priceType.display = function()
         {
             return document.write(`${this.BrandManager} is responsible for ${this.Name} (the suggested price is ${this.Price})`);
         }
