@@ -22,3 +22,11 @@ alert(napis)
 //const-nie może zmienić wartości
 //let nie może być zdeklarowany ponownie
 //var może być zdeklarowany ponoenie-niekorzystne.
+
+const lol = {
+    a: 1,
+    b: 2
+}
+
+
+

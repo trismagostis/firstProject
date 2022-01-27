@@ -38,17 +38,17 @@ class BasePrice
 /*function Games()
 {
     let Gameset=[];
-    Gameset.push(new MidPrice());
+    Gameset.push(new MidPrice()); //wstawiamy do tablicy obiekty różnych klas
     Gameset.push(new AAAPrice());
     Gameset.push(new BasePrice());
     for (let i = 0; i < Gameset.length; i++)
     {
-        Gameset[i].Display();
+        Gameset[i].Display(); //używamy 3 metod z trzech różnych klas
         document.write("<br>");
     }
 }
 Games();*/
-class PriceGameTypeFactory
+class PriceGameTypeFactory //chcemy by obiekty różnych klas mogły używać tej samej metody
 {
     createGamePriceType(type) {
         let priceType;
@@ -59,7 +59,7 @@ class PriceGameTypeFactory
         } else if (type === "aaaprice") {
             priceType = new AAAPrice();
         }
-        priceType.display = function()
+        priceType.display = function() //nietypowe: deklaracja funkcji wewnątrz funkcji. Nazwa. Tylko taki sposób deklaracji
         {
             return document.write(`${this.BrandManager} is responsible for ${this.Name} (the suggested price is ${this.Price})`);
         }
@@ -72,7 +72,7 @@ class PriceGameTypeFactory
 function GamesFactory()
 {
     let games=[];
-    let gameFactory = new PriceGameTypeFactory();
+    let gameFactory = new PriceGameTypeFactory();//tworzymy obiekt klasy bez własności tylko po to by wywołać metodę createGamePriceType
     let aaaPrice = gameFactory.createGamePriceType("aaaprice");
 
     games.push(aaaPrice);
@@ -82,8 +82,8 @@ function GamesFactory()
 
     for (let i = 0; i < games.length; i++)
     {
-        games[i].display();
-        document.write("<br>");
+        games[i].display(); //tu jest pies pogrzebany, używamy tutaj jednej funkcji klasy PriceGameTypeFactory do obiektów różnych klas (polimorfizm)
+        document.write("<br>"); // polimorfem jest metoda display
     }
 }
 GamesFactory();

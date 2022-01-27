@@ -1,4 +1,4 @@
-/*let tablica = [3.4,5,2,4];
+let tablica = [5,23.4,4,'bob'];
 alert("drugielement tablicy "+ tablica[1]);
 alert(`drugi element tablicy ${tablica[1]}`);
 alert(`długość tablicy ${tablica.length}`);
@@ -7,7 +7,7 @@ tablica.push(7);
 alert("piaty element tablicy "+ tablica[4]);
 alert(`długość tablicy ${ tablica.length}`);
 tablica[1]=7;
-alert(tablica);*/
+alert(tablica);
 /*let labels=['bob','dom','ala'];
 labels.push('dog');
 alert(labels.length);
