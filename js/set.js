@@ -5,14 +5,15 @@ class warzywo
     amount = 0;
 }
 let clothes = new Set();//new ponieważ powstaje nowy obiekt klasy Set
-//clothes.add ('cweter');
-//clothes.add ('kalesony');
-//clothes.delete('cweter')
-//alert(clothes.has('cweter'))
-//alert(clothes.size);
-//clothes.add('cweter'); //robi nic
-//clothes.add(5);
-let por = new warzywo;
+clothes.add ('cweter');
+clothes.add ('kalesony');
+clothes.delete('cweter');
+ clothes.add ('cweter');
+clothes.add('cweter'); //robi nic
+clothes.add(5);
+for(let item of clothes)
+    document.write(item+'<BR>');
+/*let por = new warzywo;
 por.name='por';
 por.amount=50;
 por.prize=2;
@@ -28,7 +29,7 @@ for (let item of clothes)
         document.writeln(item.prize);
     }
 
-}
+}*/
 /*let vegetables =  new Set();
 
 const pomidor = {
