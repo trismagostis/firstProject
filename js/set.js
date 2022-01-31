@@ -1,68 +1,24 @@
-/*class warzywo {
-    name = 'noname';
-    price = 0;
+class warzywo
+{
+    name ='noname';
+    prize ='0';
     amount = 0;
-
-    constructor(name, price, amount) {
-        this.name = name;
-        this.price = price;
-        this.amount = amount;
-    }
-
-    display = function () {
-        document.write("Name: " + this.name + "<br>");
-        document.write("Price: " + this.price + "<br>");
-        document.write("Amount: " + this.amount + "<br>");
-    }
 }
-
-
-//let zgniłek=new warzywo('banan',1,2);
-//zgniłek.display();
-//let raw = new warzywo();*/
 let clothes = new Set();//new ponieważ powstaje nowy obiekt klasy Set
-clothes.add ('cweter');
-clothes.add ('kalesony');
-for (let cos of clothes)
-{
-    document.write(cos+'<BR>');
-}
-clothes.delete('cweter')
-for (let cos of clothes)
-{
-    document.write(cos+'<BR>');
-}
-alert(clothes.has('kalesony'))
-alert(clothes.size);
-clothes.add('kalesony'); //robi nic */
+//clothes.add ('cweter');
+//clothes.add ('kalesony');
+//clothes.delete('cweter')
+//alert(clothes.has('cweter'))
+//alert(clothes.size);
+//clothes.add('cweter'); //robi nic
 //clothes.add(5);
-/*let magazyn = new Set();
-let IleWarzyw =prompt('ile różnych warzyw przyjechało');
-for(let i=0; i<IleWarzyw; i++)
-{
-    magazyn.add(new warzywo(prompt('podaj nazwę'), prompt('podaj cenę'), prompt('podaj ilość')));
-}
-let wybor = prompt('jeżeli szukasz po nazwie wpisz 1, jeżeli szukasz po cenie wpisz 2, jeżeli szukasz po ilości wpisz 3');
-if(wybor==1)
-{
-    let Nazwa = prompt('jaka nazwa Cię interesuje')
-    for(let item of magazyn)
-        if(item.name==Nazwa)
-         item.display();*/
-}
-
-/*const name = prompt('jaka nazwa Cię interesuje');
-magazyn.filter(item => item.name === name )
-       .forEach(item => item.display());*/
-
-
-
-/*por.name='por';
+let por = new warzywo;
+por.name='por';
 por.amount=50;
-por.prize=2;*/
+por.prize=2;
 //clothes.add(new warzywo);
 //clothes.add(new warzywo);
-/*clothes.add(por);
+clothes.add(por);
 for (let item of clothes)
 {
     if (item.amount < 40)
@@ -72,7 +28,7 @@ for (let item of clothes)
         document.writeln(item.prize);
     }
 
-}*/
+}
 /*let vegetables =  new Set();
 
 const pomidor = {
